@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container" id="containerIMG">
+        <div id="logo">
+            <img src="" alt="">
+            <h1>LOGO</h1>
+        </div>
+    </div>
+    <div class="container" id="containerForms">
+        <div id="TextoIntro">
+            <div>
+                <p>This is not a real online service. Lorem ipsum dolor, sit amet consectetur adipisicing
+                    elit. Eum rerum hic at temporibus cupiditate officia omnis minima eos et rem
+                    deserunt quae, enim ipsa ducimus adipisci quibusdam commodi sapiente. Autem?
+                    <br><br> You know you want to!
+                </p>
+            </div>
+        </div>
+
+        <form action="#" id="forms">
+
+            <div class="input">
+                <label for="first-name">First name</label>
+                <input type="text" name="first-name" pattern="[A-Za-z].{1,}" required>
+            </div>
+
+            <div class="input">
+                <label for="last-name">Last name</label>
+                <input type="text" name="last-name" pattern="[A-Za-z].{1,}" required>
+            </div>
+
+            <div class="input">
+                <label for="email">Email</label>
+                <input type="email" name="email" required>
+            </div>
+
+            <div class="input">
+                <label for="telefone">Phone</label>
+                <input required type="text" name="telefone" minlength="9" maxlength="9"
+                    title="please enter a valid phone number">
+            </div>
+
+            <div class="input">
+                <label for="senha">Password</label>
+                <input type="password" name="senha" minlength="8" maxlength="16" required>
+            </div>
+
+            <div class="input">
+                <label for="confima">Confirm password</label>
+                <input type="password" name="confirma" required>
+            </div>
+            <div class="input" id="log-in">
+                <button type="submit">Create Account</button>
+            </div>
+        </form>
+        <p>Already have an account? <span>Log in</span></p>
+    </div>
+
+</body>
+
+</html>
